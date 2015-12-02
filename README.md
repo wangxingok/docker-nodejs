@@ -25,3 +25,14 @@ CMD ["node", "/src/bin/www"]
   
 # 运行镜像 
   docker run -d -p 8080:8080 wyx/centos-nodejs-hello
+  
+# 查看日志
+  docker ps;--查看容器的CONTAINER ID
+  
+  docker  logs -f 【CONTAINER ID】
+# 访问页面
+如果是windows需要在virtualBox中设置端口映射
+
+右击虚拟机 -》设置 -》网络 -》端口转发 转发在虚拟机的8080端口
+
+http://localhost:8080
